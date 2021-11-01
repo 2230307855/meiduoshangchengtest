@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="137137d8-03ee-4f04-8d2c-aefbe8c5143f" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/美多/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/美多/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1635677184750</updated>
       <workItem from="1635677255221" duration="2179000" />
-      <workItem from="1635772827864" duration="1439000" />
+      <workItem from="1635772827864" duration="2514000" />
     </task>
     <servers />
   </component>

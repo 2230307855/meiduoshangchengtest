@@ -4,7 +4,9 @@ from django.db import models
 class BookInfo(models.Model):
     #id
     name=models.CharField(max_length=10)
-
+    #重写方法来正确显示书籍的名字，并重新运行
+    def __str__(self):
+        return self.name
 class PeopleInfo(models.Model):
     name=models.CharField(max_length=10)
     gender=models.BooleanField()

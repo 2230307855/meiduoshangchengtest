@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="137137d8-03ee-4f04-8d2c-aefbe8c5143f" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/美多.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/美多/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/美多/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/美多/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/美多/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/美多/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/book/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/美多/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/美多/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +77,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1635677184750</updated>
-      <workItem from="1635677255221" duration="1528000" />
+      <workItem from="1635677255221" duration="2179000" />
+      <workItem from="1635772827864" duration="1439000" />
     </task>
     <servers />
   </component>
@@ -109,6 +95,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

@@ -23,9 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)d*icte_d-^&nqk$dy*e6*%^9mq=%h5u6*7rkvp_yq_7@_@1#-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# 开发的时候要看到更多的信息，多以要开启debug模式，部署给用户使用要设置位False
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#当debug改为False必须设置下面的以何种方式来访问 页面 默认是127.0.0.1（本机回环）
+#*的意思是可以以任何方式访问页面
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="137137d8-03ee-4f04-8d2c-aefbe8c5143f" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/book/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/美多/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/美多/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="137137d8-03ee-4f04-8d2c-aefbe8c5143f" name="默认的" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../me/一些屁事/数据挖掘/实验4" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,6 +84,7 @@
       <workItem from="1635772827864" duration="2917000" />
       <workItem from="1635837352640" duration="188000" />
       <workItem from="1635853716394" duration="2232000" />
+      <workItem from="1635919169022" duration="34000" />
     </task>
     <servers />
   </component>

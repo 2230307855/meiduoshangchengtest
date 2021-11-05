@@ -81,8 +81,14 @@ WSGI_APPLICATION = '美多.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST':'127.0.0.1',#主机
+        'POST':3306,  #端口号
+        'USER':'root', #用户名
+        'PASSWORD':'199911huiyi.', #密码
+        'NAME':'book_test',
     }
 }
 
@@ -124,6 +130,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#设置会话缓存，将信息放入缓存中去
+#解决切换数据库后出现的异常问题
+SESSION_ENGINE='django.contrib.sessions.backends.cache'
 
 STATICFILES_DIRS=[
     BASE_DIR / 'static'

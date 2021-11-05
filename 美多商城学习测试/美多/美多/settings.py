@@ -23,9 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)d*icte_d-^&nqk$dy*e6*%^9mq=%h5u6*7rkvp_yq_7@_@1#-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# 调试模式，在开发的时候可以在测试时看到更多的信息  部署到服务器时改为False
+# 如果debug为False 必须设置下面的访问方式
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#允许以什么方式来访问项目 默认 127.0.0.1  *指的是任意形式
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'book',
-    # 'book.apps.BookConfig'
+    #1. 'book',
+    'book.apps.BookConfig'
 ]
 
 MIDDLEWARE = [
@@ -52,7 +55,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = '美多.urls'
-
+#模板配置相关
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -121,6 +124,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS=[
+    BASE_DIR / 'static'
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

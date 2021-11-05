@@ -8,4 +8,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse("ok")
+    # return HttpResponse("ok")
+    context={
+        'name':'马上双十一，点我有惊喜！'
+    }
+    return render(request,'book/index.html',context=context)
+    #三个参数  请求、模板名字、context表示上下文动态数据

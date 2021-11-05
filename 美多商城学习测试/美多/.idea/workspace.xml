@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="137137d8-03ee-4f04-8d2c-aefbe8c5143f" name="默认的" comment="">
       <change afterPath="$PROJECT_DIR$/book/urls.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/static/keqing.jpg" afterDir="false" />
@@ -10,19 +11,28 @@
       <change beforePath="$PROJECT_DIR$/美多/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/美多/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/美多/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/美多/urls.py" afterDir="false" />
     </list>
+=======
+    <list default="true" id="137137d8-03ee-4f04-8d2c-aefbe8c5143f" name="默认的" comment="" />
+>>>>>>> a437cb4dae2d6db36e4ebcefe78653cd7ecf35f8
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+=======
+>>>>>>> a437cb4dae2d6db36e4ebcefe78653cd7ecf35f8
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+<<<<<<< HEAD
         <option value="HTML File" />
+=======
+>>>>>>> a437cb4dae2d6db36e4ebcefe78653cd7ecf35f8
       </list>
     </option>
   </component>
@@ -51,7 +61,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../me/一些屁事/数据挖掘/实验4" />
+>>>>>>> a437cb4dae2d6db36e4ebcefe78653cd7ecf35f8
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -99,12 +113,19 @@
       <option name="presentableId" value="Default" />
       <updated>1635677184750</updated>
       <workItem from="1635677255221" duration="2179000" />
+<<<<<<< HEAD
       <workItem from="1635772827864" duration="1439000" />
       <workItem from="1636033201751" duration="583000" />
       <workItem from="1636040852061" duration="1590000" />
       <workItem from="1636042471344" duration="1483000" />
       <workItem from="1636074228655" duration="1553000" />
       <workItem from="1636090438304" duration="3471000" />
+=======
+      <workItem from="1635772827864" duration="2917000" />
+      <workItem from="1635837352640" duration="188000" />
+      <workItem from="1635853716394" duration="2232000" />
+      <workItem from="1635919169022" duration="34000" />
+>>>>>>> a437cb4dae2d6db36e4ebcefe78653cd7ecf35f8
     </task>
     <servers />
   </component>

@@ -1,3 +1,4 @@
+#每次models的文件的内容发生变化，都要执行迁移
 from django.db import models
 
 # Create your models here.
@@ -26,3 +27,23 @@ class BookInfo(models.Model):
         db_table='bookinfo'
         #admin站点使用
         verbose_name='书籍管理'
+
+
+class PeopleInfo(models.Model):
+    #定义一个有序字典
+    GENDER_CHOICE=((1,'male'),(2,'female'))
+    name=models.CharField(max_length=10,unique=True)
+    #让性别从自己定义的键值元组中选择
+    gender=models.SmallIntegerField(choices=GENDER_CHOICE,default=1)
+    description=models.CharField(max_length=100,null=True)
+    is_delete=models.BooleanField(default=False)
+    #系统会自动为外键添加下划线id，自己不用加
+    book=models.ForeignKey(BookInfo,on_delete=models.CASCADE)
+    #外键的级联操作
+    #SET_NULL 设置为空
+    #PROTECTED 抛出异常，不让删除
+    #CASCADE 级联删除
+    #
+    class Meta:
+        db_table='peopleinfo'
+        verbose_name='人物信息'

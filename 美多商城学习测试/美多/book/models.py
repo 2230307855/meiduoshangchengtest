@@ -1,5 +1,6 @@
 from django.db import models
 
+#模型类要继承自models.Model
 # Create your models here.
 class BookInfo(models.Model):
     #id

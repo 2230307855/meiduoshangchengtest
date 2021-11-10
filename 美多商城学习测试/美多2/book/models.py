@@ -22,6 +22,9 @@ class BookInfo(models.Model):
     readcount=models.SmallIntegerField(default=0)
     commentcount=models.IntegerField(default=0)
     is_delete=models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name
     #修改表的名称（固定的写法）
     class Meta:
         db_table='bookinfo'
@@ -44,6 +47,9 @@ class PeopleInfo(models.Model):
     #PROTECTED 抛出异常，不让删除
     #CASCADE 级联删除
     #
+    def __str__(self):
+        return self.name
+
     class Meta:
         db_table='peopleinfo'
         verbose_name='人物信息'

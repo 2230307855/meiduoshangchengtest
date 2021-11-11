@@ -88,3 +88,30 @@ BookInfo.objects.exclude(id=3)
 BookInfo.objects.filter(pub_date__year=1980)
 #查询1990年1月1日后发表的图书
 BookInfo.objects.filter(pub_date__gt='1990-1-1')
+##################################
+#F对象
+from django.db.models import F
+#两个属性的比较
+#格式 以filter为例
+# 模型类名.objects.filter(属性名__运算符=F('第二个属性名'))
+#！！！！！！！！！！
+#查询阅读量大于评论量的书籍
+BookInfo.objects.filter(readcount__gte=F('commentcount'))
+#查询阅读量大于两倍评论量的图书
+BookInfo.objects.filter(readcount__gt=F('commentcount')*2)
+##################################
+#Q对象
+#并且查询
+#查询阅读量大于20，并且编号小于3的图书
+BookInfo.objects.filter(readcount__gt=20).filter(id__lt=3)
+BookInfo.objects.filter(readcount__gt=20,id__lt=3)
+
+#或者查询
+from django.db.models import Q
+#语法
+#模型类名.objects.filter(Q(属性名__运算符=值)|Q(属性名__运算符=值)|....)
+#用Q实现并且
+#模型类名.objects.filter(Q(属性名__运算符=值)&Q(属性名__运算符=值)&Q....)
+#Q非
+#模型类名.objects.filter(~Q(属性名__运算符=值)&Q(属性名__运算符=值)&Q....)
+BookInfo.objects.filter(Q(readcount__gt=20)|Q(id__lt=3))

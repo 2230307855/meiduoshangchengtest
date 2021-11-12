@@ -115,3 +115,13 @@ from django.db.models import Q
 #Q非
 #模型类名.objects.filter(~Q(属性名__运算符=值)&Q(属性名__运算符=值)&Q....)
 BookInfo.objects.filter(Q(readcount__gt=20)|Q(id__lt=3))
+########################################################
+#聚合函数：Sum、Max、Min、Avg、Count
+from django.db.models import Sum,Max,Min,Avg,Count
+
+#样例 模型类名.objects.aggregate(Xxx('字段名'))
+BookInfo.objects.aggregate(Sum('readcount'))
+#########################################################
+#排序
+BookInfo.objects.all().order_by('readcount')#升序
+BookInfo.objects.all().order_by('-readcount')#降序

@@ -125,3 +125,27 @@ BookInfo.objects.aggregate(Sum('readcount'))
 #排序
 BookInfo.objects.all().order_by('readcount')#升序
 BookInfo.objects.all().order_by('-readcount')#降序
+####################################################
+#级联查询
+#查询书籍为1的所有人物信息
+book=BookInfo.objects.get(id=1)#一对多查询
+#一到多的访问/利用系统添加的访问关联模型类_set来实现
+book.peopleinfo_set.all()
+PeopleInfo.objects.filter(book=1)
+#查询人物为1的书籍信息
+person=PeopleInfo.objects.get(id=1)
+person.book
+person.book.name
+####################################################
+#关联查询的过滤查询
+#模型类名.objects.(关联模型名小写__字段名__运算符=值)
+#查询图书 要求图书人物为 郭靖
+BookInfo.objects.filter(peopleinfo__name__exact='郭靖')
+BookInfo.objects.filter(peopleinfo__name='郭靖')
+#查询图书 要求图书中人物描述包含“八”
+BookInfo.objects.filter(peopleinfo__description__contains='八')
+#查询书名是‘天龙八部’的所有人物
+PeopleInfo.objects.filter(book__name='天龙八部')
+PeopleInfo.objects.filter(book__name__iexact='天龙八部')
+#查询图书阅读量大于30的所有人物
+PeopleInfo.objects.filter(book__commentcount__gt=30)

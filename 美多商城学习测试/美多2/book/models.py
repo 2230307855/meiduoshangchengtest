@@ -10,7 +10,7 @@ from django.db import models
     属性名 对应 就是字段名
   类型就是mysql里的类型
   选项  是否有默认值、为1、为null
-  charfield 必须设置max_length
+  chcharfield 必须设置max_length
   verbose_name 主要是站点使用
 2.改变表的名称
   默认的表的名称是：子应用名_类名 且都是小写

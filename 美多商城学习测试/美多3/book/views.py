@@ -33,3 +33,8 @@ url 以 ？ 来进行分割  分为2部分
 ？后边为 查询的字符串  类似于字典key=value 多个用&连接
 
 """
+
+def register(request):
+    data=request.POST
+    print(data)
+    return HttpResponse("ok")

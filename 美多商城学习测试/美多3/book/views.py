@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from book.models import BookInfo
 # Create your views here.
 def create_book(request):
@@ -10,8 +10,14 @@ def create_book(request):
     )
     return HttpResponse('create')
 
-def shop(request,city_id,shop_id):
+def shop(request,city_id,mobile):
+    import re
     # print('city_id is:',city_id,' shop_id is:',shop_id)
+    # 验证方案一
+    # if not re.match('\d{5}',shop_id):
+    #     return HttpResponse('无此商品')
+    #验证方案二
+
     query_params=request.GET
     print(query_params)
     # order=query_params.get('order')
@@ -38,3 +44,59 @@ def register(request):
     data=request.POST
     print(data)
     return HttpResponse("ok")
+
+def json(request):
+    import json
+    body=request.body
+    body_str=body.decode()
+    # 解码成str类型
+    """
+    {
+    "name": "itcast",
+    "age":10
+    }
+    """
+    # 转为python的字典
+    body_dict=json.loads(body_str)
+    print(body_dict)
+    print(request.META['SERVER_PORT'])
+    return HttpResponse("json")
+
+def method(request):
+    print(request.method)
+    return HttpResponse('method')
+
+def res(request):
+    response =HttpResponse('res',status=200)
+    response['name']='itcast'
+    return response
+#相应状态只能从1-599
+#4xx 请求有问题 404路由问题 403禁止访问 权限问题
+#200 成功
+#1xx 消息
+#3xx 重定向
+#5xx 服务器错误
+from django.http import HttpResponse,JsonResponse
+def respone(request):
+    info={
+        'name':'itcast',
+        'sddress':'shunyi'
+    }
+    girl_friends=[
+        {
+            'name': 'itcast',
+            'sddress': 'shunyi'
+        },
+        {
+            'name': 'itcast',
+            'sddress': 'shunyi'
+        }
+    ]
+
+    respone=JsonResponse(data=girl_friends,safe=False)
+    #sfe=true表示数据必须是字典
+    #如果给一个非字典数据，safe=false
+    return respone
+
+def rdict(request):
+    return redirect('https://www.baidu.com/default.html')
